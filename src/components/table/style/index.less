@@ -1,0 +1,121 @@
+@import "../../style/themes/default";
+@import "../../style/mixins/index";
+@import "./mixin";
+
+.@{peach-prefix}-table{
+  position: relative;
+  .@{peach-prefix}-table-container{
+    width: 100%;
+    overflow-x: auto;
+  }
+  .@{peach-prefix}-table-header{
+    background-color: @table-header-bg;
+    color: @heading-color;
+    position: relative;
+    color: @table-header-color;
+    th {
+      height: @table-header-height;
+      padding: 10px;
+      text-align: left;
+      font-weight: normal;
+    }
+  }
+  .@{peach-prefix}-table-check-column{
+    position: absolute;
+    width: 40px;
+    left: 0px;
+    top: 0px;
+    input{
+      vertical-align: -2px;
+    }
+  }
+  table{
+    width: 100%;
+    margin: 0px;
+    max-width: none;
+    border-width: 0;
+    border-color: inherit;
+    border-collapse: separate;
+    border-spacing: 0;
+    empty-cells: show;
+    outline: 0;
+  }
+  .@{peach-prefix}-table-body{
+    overflow-x: auto;
+    position: relative;
+    tr{
+      transition: all .3s;
+      height: @table-row-height;
+      &:nth-child(2n+1){
+        background-color: @table-row-bg-odd;
+      }
+      &:nth-child(2n){
+        background-color: @table-row-bg-even;
+      }
+      td {
+        padding: 10px;
+      }
+    }
+  }
+  .@{peach-prefix}-table-page-bar{
+    line-height: 27px;
+    padding: 10px 0px 20px;
+    div, p, span, a{
+      display: inline-block;
+    }
+    .@{peach-prefix}-table-page-bar-left{
+      span{
+        margin-right: 10px;
+      }
+      select{
+        margin-right: 5px;
+        height: 27px;
+        font-size: 13px;
+        border: 1px solid #d4d9e3;
+        background-color: transparent;
+      }
+    }
+    .@{peach-prefix}-table-page-bar-right{
+      float: right;
+      a{
+        color: #5a698a;
+      }
+      span{
+        margin: 0px 10px;
+      }
+      p{
+        margin-left: 20px;
+      }
+      input{
+        width: 35px;
+        height: 27px;
+        margin: 0 3px;
+        text-align: center;
+        color: #6e7b98;
+        border: 1px solid #d4d9e3;
+        font-size: 13px;
+      }
+      .@{peach-prefix}-table-page-to-btn{
+        margin-left: 18px;
+        color: #ffffff;
+        background: #5584ff;
+        border-radius: 3px;
+        width: 55px;
+        height: 27px;
+        line-height: 27px;
+        text-align: center;
+        &:hover {
+          text-decoration: none;
+          cursor: pointer;
+          border-color: #7198ff;
+          background-color: #7198ff;
+        }
+      }
+    }
+  }
+  .@{peach-prefix}-table-no-data{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+}
