@@ -1,0 +1,124 @@
+peach-tooltip{
+  display: inline-block;
+  .peach-tooltip{
+    display: inline-block;
+    position: relative;
+    &:hover {
+      .peach-tooltip-content{
+        visibility: visible;
+      }
+    }
+    .peach-tooltip-content{
+      visibility: hidden;
+      position: absolute;
+      color: #8d8d66;
+      line-height: 27px;
+      word-break: break-all;
+      width: 200px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-left: -7px;
+      -webkit-box-shadow: 0 0 10px #999;
+      -moz-box-shadow: 0 0 10px #999;
+      box-shadow: 0 0 10px #999;
+      background-color: #fbfdec;
+      top: 0px;
+      left: 0px;
+      word-break: break-all;
+      z-index: 100;
+      i{
+        display: inline-block;
+        position: absolute;
+        border: 7px solid transparent;
+      }
+    }
+    .peach-tooltip-bottom {
+      i{
+        border-bottom: 7px solid #fbfdec;
+        top: -14px;
+        left: 50%;
+        margin-left: -7px;
+      }
+    }
+    .peach-tooltip-bottomLeft {
+      i{
+        border-bottom: 7px solid #fbfdec;
+        top: -14px;
+        left: 14px;
+      }
+    }
+    .peach-tooltip-bottomRight {
+      i{
+        border-bottom: 7px solid #fbfdec;
+        top: -14px;
+        right: 14px;
+      }
+    }
+    .peach-tooltip-top {
+      i{
+        border-top: 7px solid #fbfdec;
+        bottom: -14px;
+        left: 50%;
+        margin-left: -7px;
+      }
+    }
+    .peach-tooltip-topLeft {
+      i{
+        border-top: 7px solid #fbfdec;
+        bottom: -14px;
+        left: 14px;
+      }
+    }
+    .peach-tooltip-topRight {
+      i{
+        border-top: 7px solid #fbfdec;
+        bottom: -14px;
+        right: 14px;
+      }
+    }
+    .peach-tooltip-left {
+      i{
+        border-left: 7px solid #fbfdec;
+        right: -14px;
+        top: 50%;
+        margin-top: -7px;
+      }
+    }
+    .peach-tooltip-leftTop {
+      i{
+        border-left: 7px solid #fbfdec;
+        right: -14px;
+        top: 14px;
+      }
+    }
+    .peach-tooltip-leftBottom {
+      i{
+        border-left: 7px solid #fbfdec;
+        right: -14px;
+        bottom: 14px;
+      }
+    }
+    .peach-tooltip-right {
+      i{
+        border-right: 7px solid #fbfdec;
+        left: -14px;
+        top: 50%;
+        margin-top: -7px;
+      }
+    }
+    .peach-tooltip-rightTop {
+      i{
+        border-right: 7px solid #fbfdec;
+        left: -14px;
+        top: 14px;
+      }
+    }
+    .peach-tooltip-rightBottom {
+      i{
+        border-right: 7px solid #fbfdec;
+        left: -14px;
+        bottom: 14px;
+      }
+    }
+  }
+}
